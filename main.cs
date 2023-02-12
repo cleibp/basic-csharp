@@ -12,7 +12,7 @@ class Program
         double peso = 70.5;
         bool ativo = true;
 
-        int val1, val2, soma;
+        int val1, val2, soma, subtracao, multiplicacao, divisao, modulo;
 
         int idadeTernario;
         string idadeTer;
@@ -39,24 +39,26 @@ class Program
         de varias linhas */
 
         // Escrever na tela
-        Console.Write("Hello World");
-        Console.WriteLine("\n");
+        Console.WriteLine("#### Escrever na tela ####");
+        Console.WriteLine("Olá Mundo");
+        Console.WriteLine("");
 
         // VARIÁVEIS
         Console.WriteLine("### VARIÁVEIS ###");
-        Console.WriteLine(nome);
-        Console.WriteLine(idade);
-        Console.WriteLine(sexo);
-        Console.WriteLine(peso);
-        Console.WriteLine(ativo);
+        Console.WriteLine("Nome: " + nome);
+        Console.WriteLine("Idade: " + idade);
+        Console.WriteLine("Sexo: " + sexo);
+        Console.WriteLine("Peso: " + peso);
+        Console.WriteLine("Ativo: " + ativo);
         Console.WriteLine("\n");
 
         // CONSTANTE
         Console.WriteLine("### CONSTANTE ###");
-        Console.WriteLine(PI);
+        Console.WriteLine("PI: " + PI);
         Console.WriteLine("\n");
 
-        Console.WriteLine("#### Capturando Variáveis ####");
+        // OPERACOES
+        Console.WriteLine("#### OPERACOES ####");
         Console.Write("Informe o valor 1: ");
         val1 = Convert.ToInt32(Console.ReadLine());
 
@@ -64,8 +66,18 @@ class Program
         val2 = Convert.ToInt32(Console.ReadLine());
 
         soma = val1 + val2; // Pode usar: (+, -, *, /, %)
-        Console.WriteLine(soma);
-        Console.WriteLine("\n");
+        subtracao = val1 - val2;
+        multiplicacao = val1 * val2;
+        divisao = val1 / val2;
+        modulo = val1 % val2;
+        Console.WriteLine("Soma: " + soma);
+        Console.WriteLine("Subtracao: " + subtracao);
+        Console.WriteLine("Multiplicacao: " + multiplicacao);
+        Console.WriteLine("Divisao: " + divisao);
+        Console.WriteLine("Modulo: " + modulo);
+        Console.WriteLine("");
+
+      
 
         // TERNARIO
         Console.WriteLine("### TERNARIO ###");
